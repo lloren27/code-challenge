@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import request from './request';
 import { ARTICLES_QUERY } from './queries';
+import './App.css';
 
 class App extends Component {
   // definition
@@ -20,11 +21,15 @@ class App extends Component {
 
   // Renders
   render() {
-    return (
-      <div className="App">
-        <h2>Billin code challenge</h2>
-        <pre>{JSON.stringify(this.state.articles, null, 2)}</pre>
-      </div>
+    return (<div className="App">
+      <nav className="navbar navbar-sark bg-dark">
+        <span className="text-white">
+            Billin newspaper
+          </span>
+      </nav>
+      <h2 className="text-white">Billin articles</h2>
+      <pre>{JSON.stringify(this.state.articles, null, 2)}</pre>
+    </div>
     );
   }
 }
