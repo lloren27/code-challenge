@@ -16,9 +16,10 @@ class Navigation extends Component {
 import React from 'react';
 
 export const Navigation = (() =>
-  <nav className="navbar navbar-dark bg-dark">
-    <a href="" className="text-white">{this.props.titulo}
-    </a>
+  <nav className="navbar navbar-dark bg-dark" >
+    <span className="text-white">
+            Billin newspaper
+    </span>
   </nav>
 );
 
