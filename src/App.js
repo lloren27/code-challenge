@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Navigation } from './components/navigation';
 import { Footer } from './components/footer';
+import { ListOfArticles } from './components/listofArticles';
+import { Articles } from './components/articles';
 import request from './request';
 import { ARTICLES_QUERY } from './queries';
 import './App.css';
