@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './ArticleCard.css';
+import './articleCard.css';
 
-const ArticleCard = ({ author, excerpt, title }) =>
+const article = ({ author, excerpt, title }) =>
   <div className="ArticleCard">
     <div className="Title">{title}</div>
     <div className="Author">{author}</div>
     <div className="Excerpt">{excerpt}</div>
   </div>;
 
-ArticleCard.propTypes = {
+article.propTypes = {
   author: PropTypes.string.isRequired,
   excerpt: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };
 
-export default ArticleCard;
+export default Article;
