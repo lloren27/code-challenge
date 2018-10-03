@@ -18,7 +18,6 @@ class listArticles extends Component {
       this.setState({ articles: response.data.articles });
     });
   }
-
   renderCards = articles => articles.map(article => (
     <Article key={article.title} {...article} />
   ));
@@ -26,12 +25,10 @@ class listArticles extends Component {
   render() {
     const { articles } = this.state;
     return (
-      <div>
-        {articles.length ?
-          <Grid columns={3} gutter={8} spaceBetween={8}>
-            {this.renderCards(articles)}
-          </Grid> : null
-        }
+      <div className="row">
+        <div className="col-md-4">
+          {this.renderCards(articles)}
+        </div>
       </div>
     );
   }
