@@ -1,9 +1,9 @@
 
 import React, { Component } from 'react';
-import request from '../request';
-import { ARTICLES_QUERY } from '../queries';
+import request from '../../request';
+import { ARTICLES_QUERY } from '../../queries';
 
-import Article from '../article';
+import Article from '../articles/articles';
 
 class listArticles extends Component {
   constructor(props) {

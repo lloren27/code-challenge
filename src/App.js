@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Navigation } from './components/navigation';
 import { Footer } from './components/footer';
-import { ListArticles } from './components/listArticles';
-import { Articles } from './components/articles';
-import request from './request';
-import { ARTICLES_QUERY } from './queries';
+import { ListArticles } from './components/listArticles/listArticles';
+import { Articles } from './components/articles/articles';
+
 import './App.css';
 
 class App extends Component {
@@ -16,12 +15,12 @@ class App extends Component {
     };
   }
 
-  // lifecycle
-  componentWillMount() {
-    request(ARTICLES_QUERY).then(response => {
-      this.setState({ articles: response.data.articles });
-    });
-  }
+  // // lifecycle
+  // componentWillMount() {
+  //   request(ARTICLES_QUERY).then(response => {
+  //     this.setState({ articles: response.data.articles });
+  //   });
+  // }
 
   // Renders
   render() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './articleCard.css';
+import './articles.css';
 
 const article = ({ author, excerpt, title }) =>
   <div className="ArticleCard">
@@ -16,4 +16,4 @@ article.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-export default Article;
+export default article;
