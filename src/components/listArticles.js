@@ -1,11 +1,11 @@
 
 import React, { Component } from 'react';
-import request from '../../../../infrastructure/request';
-import { ARTICLES_QUERY } from '../../../../infrastructure/request/queries';
+import request from '../request';
+import { ARTICLES_QUERY } from '../queries';
 
-import ArticleCard from '../ArticleCard';
+import Article from '../article';
 
-class ArticlesList extends Component {
+class listArticles extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,7 +20,7 @@ class ArticlesList extends Component {
   }
 
   renderCards = articles => articles.map(article => (
-    <ArticleCard key={article.title} {...article} />
+    <Article key={article.title} {...article} />
   ));
 
   render() {
@@ -37,4 +37,4 @@ class ArticlesList extends Component {
   }
 }
 
-export default ArticlesList;
+export default listArticles;
