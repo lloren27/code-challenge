@@ -5,7 +5,7 @@ import { ARTICLES_QUERY } from '../../queries';
 
 import Article from '../articles/articles';
 
-class listArticles extends Component {
+class ListArticles extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -34,4 +34,4 @@ class listArticles extends Component {
   }
 }
 
-export default listArticles;
+export default ListArticles;
