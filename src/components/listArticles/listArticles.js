@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import request from '../../request';
 import { ARTICLES_QUERY } from '../../queries';
 
-import Article from '../articles';
+import Article from '../articles/articles';
 
 class ListArticles extends Component {
   constructor(props) {
@@ -18,6 +18,7 @@ class ListArticles extends Component {
       this.setState({ articles: response.data.articles });
     });
   }
+
   renderCards = articles => articles.map(article => (
     <Article key={article.title} {...article} />
   ));
