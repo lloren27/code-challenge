@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import request from '../../request';
 import { ARTICLES_QUERY } from '../../queries';
 
-import Article from '../articles/articles';
+import Article from '../articles';
 
 class ListArticles extends Component {
   constructor(props) {
