@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Navigation } from './components/navigation';
 import { Footer } from './components/footer';
 import { ListArticles } from './components/listArticles/listArticles';
-import { Articles } from './components/articles/articles';
+
+// import { Articles } from './components/articles/articles';
 
 import './App.css';
 
@@ -28,7 +29,7 @@ class App extends Component {
       <Navigation />
       <h2 className="text-white">Billin articles</h2>
       <div className="card">
-        <div className="card-text">{JSON.stringify(this.state.articles, null, 2)}</div>
+        <ListArticles />
       </div>
       <Footer />
     </div>
